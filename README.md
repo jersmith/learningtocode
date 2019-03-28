@@ -1,4 +1,4 @@
-A brief introduction to coding, for Abi.
+A brief introduction to coding.
 
 1. [Setup](#setup)
     1. [Editor](#editor)
@@ -66,7 +66,7 @@ There are actually a few more that we'll ignore for now. And just like in math c
 ```
 (5 + 3) * (2 - 4)   is not 7, but -16
 ```
-Expressions that use arithmetic operators and numbers are call *numeric* or *arithmetic* expressions. They work in Python just like in math class. Go ahead and open your shell and type `Python`.
+Expressions that use arithmetic operators and numbers are call *numeric* or *arithmetic* expressions. They work in Python just like in math class. Go ahead and open your shell and type `python`.
 
 This will start the interactive Python interpreter. While not great for running large programs, it's perfect for testing little snippets. Once you start it, it should print out the version and how to get help, then present you with a prompt, something like this:
 
