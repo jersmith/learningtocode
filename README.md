@@ -58,7 +58,7 @@ If you saw that on a piece of paper, you could *evaluate* it and obtain the numb
 |+         |Addition      |
 |-         |Subtraction   |
 |*         |Multiplication|
-|%         |Division      |
+|/         |Division      |
 
 There are actually a few more that we'll ignore for now. And just like in math class, if you can't remember the order to apply the operators, you can always use parenthesis to force them to evaluate in a particular order:
 
