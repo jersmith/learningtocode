@@ -65,9 +65,19 @@ There are actually a few more that we'll ignore for now. And just like in math c
 ```
 (5 + 3) * (2 - 4)   is not 7, but -16
 ```
+Expressions that use arithmetic operators and numbers are call *numeric* or *arithmetic* expressions. They work in Python just like in math class. Go ahead and open your shell and type `Python`.
 
+This will start the interactive Python interpreter. While not great for running large programs, it's perfect for testing little snippets. Once you start it, it should print out the version and how to get help, then present you with a prompt, something like this:
+
+```
+Python 3.7.2 (tags/v3.7.2:9a3ffc0492, Dec 23 2018, 22:20:52) [MSC v.1916 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+```
+You can type expressions directly at the prompt. Go ahead and try a few with and without parenthesis, pressing enter to evaluate the expression. When you're finished you can type `quit()` followed by enter to exit Python.
 
 ## Booleans<a name="booleans"></a>
+Arithmetic may look familiar, but Boolean expressions may not. We also call then logical expressions because they are based on Boolean logic. 
 # Statements<a name="statements"></a>
 ## Assignments<a name="assignments"></a>
 ## Conditionals<a name="conditionals"></a>
