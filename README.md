@@ -8,6 +8,7 @@ A brief introduction to coding, for Abi.
 2. [Expressions](#expressions)
     1. [Numbers](#numbers)
     2. [Booleans](#booleans)
+    3. [Other Expressions](#otherexpressions)
 3. [Statements](#statements)
     1. [Assignments](#assignments)
     2. [Conditionals](#conditional)
@@ -53,7 +54,7 @@ Believe it or not, this is an expression:
 ```
 If you saw that on a piece of paper, you could *evaluate* it and obtain the number 7. This expression is composed of numbers and symbols for arithmetic. We call those symbols *operators*, and you already know them for arithmetic:
 
-|Operator  |Action        |
+|Operator  |Meaning       |
 |:--------:|--------------|
 |+         |Addition      |
 |-         |Subtraction   |
@@ -77,7 +78,92 @@ Type "help", "copyright", "credits" or "license" for more information.
 You can type expressions directly at the prompt. Go ahead and try a few with and without parenthesis, pressing enter to evaluate the expression. When you're finished you can type `quit()` followed by enter to exit Python.
 
 ## Booleans<a name="booleans"></a>
-Arithmetic may look familiar, but Boolean expressions may not. We also call then logical expressions because they are based on Boolean logic. 
+Arithmetic may look familiar, but Boolean expressions may not. We also call them logical expressions because they are based on Boolean logic. While numbers have lots of values, there are only two Boolean values, *True* and *False*.
+
+Just like arithmetic has operators, there are operators used in Logical expressions as well. Let's start with the *comparison* operators. These let us compare things to each other. In Python, some of them look like this.
+
+|Operator  |Meaning                     |
+|:--------:|----------------------------|
+|<         |Is less than                |
+|>         |Is greater than             |
+|==        |Is equal to                 |
+|!=        |Is not equal to             |
+|<=        |Is less than or equal to    |
+|>=        |Is greater than or equal to |
+
+The easiest thing to compare are numbers, so let's look at some examples.
+
+```
+5 > 3      evaluates to True
+5 < 3      evaluates to False
+5 == 3     evaluates to False
+5 != 3     evaluates to True
+```
+
+You can try this yourself in the interactive Python shell. Remember to type `python` to get it started and `quit()` to exit.
+
+Comparing two values gives us a Boolean value, but we can also combine boolean values using one of the *Logical* operators. 
+
+|Operator  |Meaning                        |
+|:--------:|-------------------------------|
+|and       |True if both operands are true |
+|or        |True if either operand is true |
+|not       |Negates a single operand       |
+
+These may look a little strange. If you think about it in English it makes more sense, as these are straight out of Aristotlian Logic. 
+
+Let's say I make a statement like
+```
+I will jump off this bridge if (today is Tuesday) and (the current time is after 4pm)
+```
+I added the parenthesis so you could see the operands. If both today is Tuesday AND it is currently after 4pm, I'll jump (True), otherwise, nah. If either condition is False (not true) then the whole thing is not true (False).
+
+The meaning changes if I use *or* instead
+```
+I will jump off this bridge if (today is Tuesday) or (the current time is after 4pm)
+```
+Now if either condition is True, I'm jumping. In other words, BOTH conditions have to be False to make the whole thing False. 
+
+We can say this very succinctly with a couple of little tables.
+
+A and B
+
+|A    |B    |Result |
+|-----|-----|-------|
+|True |True |True   |
+|True |False|False  |
+|False|True |False  |
+|False|False|False  |
+
+A or B
+
+|A    |B    |Result |
+|-----|-----|-------|
+|True |True |True   |
+|True |False|True   |
+|False|True |True   |
+|False|False|False  |
+
+A few examples with numbers might help. You can type these into your python intepreter to verify.
+
+```
+4 > 8 and 3 == 3                evaluates to False
+4 > 8 or 3 == 3                 evaluates to True
+10 <= 10 and True               evaluates to True
+1 < 2 and 2 < 3 and 6 + 1 == 7  evaluates to True
+```
+
+All of the operators we have seen so far take two operands, one on each side. The `not` operator only takes one. It negates whatever you put after it. So `not False` would yield True. May not sound very exciting, but it can help structure some complex decision making as we'll see later. For now, just a few examples you can try.
+
+```
+3 > 1 and not 5 == 5          evaluates to False
+not False and not False       evaluates to True
+not True or not True          evaluates to False
+not 6 < 10 or 2 == 3          evaluates to False
+```
+
+## Other Expressions<a name="otherexpressions"></a>
+
 # Statements<a name="statements"></a>
 ## Assignments<a name="assignments"></a>
 ## Conditionals<a name="conditionals"></a>
