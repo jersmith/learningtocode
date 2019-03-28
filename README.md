@@ -39,7 +39,7 @@ You are reading this on GitHub, which is a good way to learn about source contro
 And that's enough preamble for now, let's get started!
 
 # Expressions<a name="expressions"></a>
-Languages are composed of expressions and statements. An expression is like a phrase, or fragment. It doesn't usually do much on its own but is used heavily in statements. A statement is like a complete sentance. Sentances are composed of phrases, and there are different kinds of statements just like there are grammatically different kinds of sentances.
+Languages are composed of expressions and statements. An expression is like a phrase, or fragment. It doesn't usually do much on its own but is used heavily in statements. A statement is like a complete sentence. Sentences are composed of phrases, and there are different kinds of statements just like there are grammatically different kinds of sentences.
 
 Expressions are *evaluated*, which means that after the evaluation you have a value that can be used in a statement.
 
