@@ -45,16 +45,38 @@ To run your program, just type `python Problem_0.py`. Here's what your screen sh
 
 ![VSCode Shell](vs_shell.PNG)
 
+For each problem below, create a new file and follow the same steps to write and run your program.
 
 # Problem 1
 
-Get user input
-Write user output
+In this problem we want to let the user enter a temperature in Fahrenheit and convert it to Celsius.
+
+Here are a couple of hints.
+1. When you get the input from the user, remember that it's a string. You can not perform arithmetic on strings, so you will need to convert it to an integer. There is a nice function in Python to do this, like so:
+```python
+integer_value = int(string_value)
+```
+There is a simliar function for turning a number into a string. This could come in handy:
+```python
+string_value = str(number_value)
+```
+
+2. You'll need to look up the formula for converting temperature.
+
+Here are some questions to think about:
+1. How are you going to test that your solution is correct?
+2. What happens if the user types something other than a number in?
+3. How could you round the answer to the nearest degree?
 
 # Problem 2
 
-Temperature conversion
+This problem is intended to help you think of variables. 
 
-# Problem 3
+Imagine a gym floor with squares numbered 1, 2, 3, 4, 5 etc down the middle. There are three people, Bob, Lisa, and Marcy standing on these squares. The numbers go from left to right. Here's what we know:
 
-A logic problem
+1. Bob is always 2 squares to the left of Lisa.
+2. Marcy is always 5 squares to the right of Bob.
+
+If I tell you which square Lisa is on, tell me which square Bob and Marcy must be on.
+
+

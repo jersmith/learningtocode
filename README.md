@@ -237,7 +237,7 @@ my_age = today + 3         # Error! The variable today doesn't exist yet!
 
 Finally, when you create a name for a variable it can be almost anything, almost. It can contain letters, digits and underscores, but it must not begin with a digit. Underscores are the conventional way to seperate words, for example `my_age` instead of `myage`. There are also a handful of words used by the language that are reserved. Which is why they are called `reserved keywords`. You've already seen a few, `and`, `or` and `not` cannot be used as variable names because they are already used by the language. There are 35 reserved keywords, you can find the list [here](https://docs.python.org/3.7/reference/lexical_analysis.html#identifiers).
 
-That is a lot to cover at once. Now would be a great time to do some coding. If you look in the folder called `1_Assignment_Statements` you'll find  all the info you need to practice what we've learned so far with some realish problems. The answers are in that folder as well, but try to solve the problems yourself before comparing how you did it with how I might of done it. Be sure you are really comfortable with those problems before moving on.
+That is a lot to cover at once. Now would be a great time to do some coding. If you look in the folder called [1_Assignment_Statements](1_Assignment_Statements) you'll find  all the info you need to practice what we've learned so far with some realish problems. The answers are in that folder as well, but try to solve the problems yourself before comparing how you did it with how I might of done it. Be sure you are really comfortable with those problems before moving on.
 
 ## Conditionals<a name="conditionals"></a>
 ## Loops<a name="loops"></a>
