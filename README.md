@@ -66,7 +66,7 @@ There are actually a few more that we'll ignore for now. And just like in math c
 ```
 (5 + 3) * (2 - 4)   is not 7, but -16
 ```
-Expressions that use arithmetic operators and numbers are call *numeric* or *arithmetic* expressions. They work in Python just like in math class. Go ahead and open your shell and type `python`.
+Expressions that use arithmetic operators and numbers are called *numeric* or *arithmetic* expressions. They work in Python just like in math class. Go ahead and open your shell and type `python`.
 
 This will start the interactive Python interpreter. While not great for running large programs, it's perfect for testing little snippets. Once you start it, it should print out the version and how to get help, then present you with a prompt, something like this:
 
@@ -163,6 +163,43 @@ not 6 < 10 or 2 == 3          evaluates to False
 ```
 
 ## Other Expressions<a name="otherexpressions"></a>
+
+While numeric and logical expressions are the most common, expressions can also be composed from any other type. Both numbers and Booleans are what are known as *primitive* types, because they themselves cannot be composed of anything lower. We'll see how to compose other types using these later, but there is another primitive type you will use frequently, namely the string.
+
+A string is a sequence of characters. In Python you can make a string by just putting characters within double quotation marks.
+
+```
+"This is a string"
+"So is this"
+"Cat"
+"You get the idea"
+```
+
+Since an expression evaluates to a value, the most common expressions are just values. 
+
+```
+6                  this is an expression that evaluates to 6
+True               this is an expression that evaluates to True
+"Dog"              this is an expression that evaluates to "Dog"
+```
+
+There are sometimes special operators for certain types that you can use in expressions; not nearly as many as the operators for numbers and Booleans though. An example is the operator to join two strings together (we call this concatenating strings). It's the same operator used for addition with numbers.
+```
+"I like " + "dogs"           this evaluates to "I like dogs"
+```
+
+Since the `+` operator is used for addition with numbers and concatenation with strings we say it is *overloaded*. This means you have to know the types on either side of the plus to know if you'll get a number or a string. But what happens if you have one of each?
+
+```
+6 + "dog"           Won't work!
+```
+
+Thankfully Python sees these types don't match and will throw an error. Go ahead and try it.
+
+Some languages won't fail, but will instead try converting the types into something *reasonable* and keep chugging. The problem is that what may seem *reasonable* is usually not what you intend, so the error that Python gives is a huge blessing.
+
+That's about it for expressions for now. As we come across useful operators in other contexts I'll try to point them out, but this is more than enough to jump into statements. 
+
 
 # Statements<a name="statements"></a>
 ## Assignments<a name="assignments"></a>
