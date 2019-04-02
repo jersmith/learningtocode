@@ -4,7 +4,6 @@ A brief introduction to coding.
     1. [Editor](#editor)
     2. [Language](#language)
     3. [Shell](#shell)
-    4. [Source Control](#sourcecontrol)
 2. [Expressions](#expressions)
     1. [Numbers](#numbers)
     2. [Booleans](#booleans)
@@ -235,9 +234,99 @@ Just a few more points to make before we jump into our first programming project
 my_age = today + 3         # Error! The variable today doesn't exist yet!
 ```
 
-Finally, when you create a name for a variable it can be almost anything, almost. It can contain letters, digits and underscores, but it must not begin with a digit. Underscores are the conventional way to seperate words, for example `my_age` instead of `myage`. There are also a handful of words used by the language that are reserved. Which is why they are called `reserved keywords`. You've already seen a few, `and`, `or` and `not` cannot be used as variable names because they are already used by the language. There are 35 reserved keywords, you can find the list [here](https://docs.python.org/3.7/reference/lexical_analysis.html#identifiers).
+Finally, when you create a name for a variable it can be almost anything, almost. It can contain letters, digits and underscores, but it must not begin with a digit. Underscores are the conventional way to separate words, for example `my_age` instead of `myage`. There are also a handful of words used by the language that are reserved. Which is why they are called `reserved keywords`. You've already seen a few, `and`, `or` and `not` cannot be used as variable names because they are already used by the language. There are 35 reserved keywords, you can find the list [here](https://docs.python.org/3.7/reference/lexical_analysis.html#identifiers).
 
 That is a lot to cover at once. Now would be a great time to do some coding. If you look in the folder called [1_Assignment_Statements](1_Assignment_Statements) you'll find  all the info you need to practice what we've learned so far with some realish problems. The answers are in that folder as well, but try to solve the problems yourself before comparing how you did it with how I might of done it. Be sure you are really comfortable with those problems before moving on.
 
 ## Conditionals<a name="conditionals"></a>
+The next type of statement we're going to look at is for making decisions. These kinds of statements are called *conditional* statements because they either execute subsequent statements or not based on a condition. The first such statement we'll look at is the `if` statement. It looks like this:
+
+```
+if <condition>:
+  <statment block>
+```
+The keyword `if` is a reserved word. The *condition* is any valid Boolean expression. If this expression evaluates to `True`, then the statement block is executed, otherwise it is skipped.
+
+A statement block is one or more statements grouped together. In some languages they are grouped by putting them inside of brackets `{}`. In Python they are indented from the previous statement, usually by 4 spaces. Since Python uses indentation to mark a block, you have to be pretty careful how you space your code. Notice also the colon at the end of the `if` statement, it's required to mark the end of the `if` and the beginning of the block.
+
+Let's look at a few examples.
+
+```python
+x = int(input("Type a number: "))
+
+if x > 5:
+    print("You typed a number greater than 5")
+```
+
+When you run this, if you type a number greater than 5 the `print` statement will execute, otherwise it will not. Here's another one.
+
+```python
+x = input("Type a name: ")
+
+if x == "Andy":
+    x = "Handy " + x
+
+print(x)
+```
+
+With this one, if you type the name *Andy* it will reassign `x` by putting the string *Handy* in front of the name.
+
+Sometimes we don't want to just skip a statement block if a condition isn't met, we would like to execute a different block instead. This is where the `else` clause comes in. It works like this:
+
+```
+if <condition>:
+  <statement block>
+else:
+  <some other statement block>
+```
+
+This makes our first example more useful.
+
+```python
+x = int(input("Type a number: "))
+
+if x > 5:
+    print("You typed a number greater than 5")
+else:
+    print("You typed a number less than 6")
+```
+
+Now we're able to make *binary* decisions. Given some condition, if it's `True` do one thing, and if not do something else. But sometimes we have more than two choices, and this is where the `elif` clause comes in. It's short for *else if*, which is what many other languages use. But Python uses `elif`. It works like this.
+
+```python
+name = input("Type a name: ")
+
+if name == "Abi":
+    age = 10
+elif name == "Berki":
+    age = 8
+else:
+    age = 0
+
+print(age)
+```
+
+You may have more than two names to choose from, so you can chain these `elif` clauses as long as you want. The first match will execute, the rest will be skipped.
+
+```python
+name = input("Type a name: ")
+
+if name == "Abi":
+    age = 10
+elif name == "Berki":
+    age = 8
+elseif name == "Evi":
+    age = 4 
+elif name == "Noah":
+    age = 2
+else:
+    age = 0
+
+print(age)
+```
+This is a very powerful concept, so it's worth some practice. There are some problems you can work through in the [2_If_Statements](2_If_Statement) folder.
+
+
+
+
 ## Loops<a name="loops"></a>
