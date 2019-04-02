@@ -10,7 +10,7 @@ A brief introduction to coding.
     3. [Other Expressions](#otherexpressions)
 3. [Statements](#statements)
     1. [Assignments](#assignments)
-    2. [Conditionals](#conditional)
+    2. [Conditionals](#conditionals)
     3. [Loops](#loops)
 4. Strings
 5. Lists
