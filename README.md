@@ -199,7 +199,7 @@ That's about it for expressions for now. As we come across useful operators in o
 Where expressions are composed of values and operators, statements are very specific and composed of one or more expressions in a particular context. Statements do something. We'll look at the three most common statements now.
 
 ## Assignments<a name="assignments"></a>
-The *assignment* statement is the most fundamental statement in programming. It is ubiquitious, sublime, and so apparently simple that its nuance can be easily lossed if you try to just breeze past it. This is the line where programming starts, so we will be spending some time here. Be patient.
+The *assignment* statement is the most fundamental statement in programming. It is ubiquitious, sublime, and so apparently simple that its nuance can be easily lost if you try to just breeze past it. This is the line where programming starts, so we will be spending some time here. Be patient.
 
 First, an example.
 
@@ -243,7 +243,7 @@ The next type of statement we're going to look at is for making decisions. These
 
 ```
 if <condition>:
-  <statment block>
+  <statement block>
 ```
 The keyword `if` is a reserved word. The *condition* is any valid Boolean expression. If this expression evaluates to `True`, then the statement block is executed, otherwise it is skipped.
 
@@ -324,7 +324,7 @@ else:
 
 print(age)
 ```
-This is a very powerful concept, so it's worth some practice. There are some problems you can work through in the [2_If_Statements](2_If_Statement) folder.
+This is a very powerful concept, so it's worth some practice. There are some problems you can work through in the [2_If_Statements](2_If_Statements) folder.
 
 
 
