@@ -1,3 +1,5 @@
+# Learning to Code
+
 A brief introduction to coding.
 
 1. [Setup](#setup)
