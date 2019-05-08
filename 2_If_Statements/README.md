@@ -32,7 +32,7 @@ We could use this to see if a number is even. Could you guess how? Write a short
 
 ## Problem 2
 
-To get just the remainder, we can use th *%* operator; this is called the *modulo* operator.
+To get just the remainder, we can use the *%* operator; this is called the *modulo* operator.
 
 ```python
 9 % 2       # this will be 1, why?
@@ -40,11 +40,11 @@ To get just the remainder, we can use th *%* operator; this is called the *modul
 9 % 3       # this will also be 0
 ```
 
-This makes it even easier to determine if a number is odd or even. Update your previous program to use th *%* operator.
+This makes it even easier to determine if a number is odd or even. Update your previous program to use the *%* operator.
 
 ## Problem 3
 
-Let's say we number the days of the week starting from 0. So Sunday is zero, Monday is one, up to Saturday which we'll call 6.
+Let's say we number the days of the week starting from 0. So Sunday is 0 Monday is 1, up to Saturday which we'll call 6.
 
 Let the user enter a number for the day of the week, then another number of days to add to this day. You need to tell the user which day of the week their new day falls on.
 

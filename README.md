@@ -326,9 +326,53 @@ else:
 
 print(age)
 ```
+
 This is a very powerful concept, so it's worth some practice. There are some problems you can work through in the [2_If_Statements](2_If_Statements) folder.
 
-
-
-
 ## Loops<a name="loops"></a>
+
+If-Statements are powerful for making a decision. Loops are very similar, but instead of executing a block if a condition is true, a loop will execute a block then check the condition again. If the condition is still true, it will execute it again. It will keep doing this until the condition is false. The simplest loop is the *while* loop, it looks like this.
+
+```python
+while <condition>:
+    <statement block>
+```
+
+It's important to realize that the statement block should update the condition so that it eventually returns False. Otherwise you have what's known as an infinite loop. When your program goes into an infinite loop, you will need to press Ctrl-C to stop it (this will kill your program and exit Python). To see what this is like, try running this program:
+
+```python
+while True:
+    print("This won't stop, press Ctrl-C")
+```
+
+The easiest conditions to check are with numbers. Here's a program that will print the first 10 powers of 2.
+
+```python
+start = 1
+power = 0
+while power < 10:
+  print(start)
+  start = start * 2
+  power = power + 1
+```
+
+Notice the pattern here; there is a condition variable *power*, it gets initialized, checked, then modified. This is a very common pattern for writing loops.
+
+We can use this approach with other types and conditions, not just numbers. Here's a program to generate a random 10-digit phone number. It uses a special build in command to generate a random number, but pay attention to the loop.
+
+```python
+# we have to import random to use this command
+import random
+
+phone_number = ""
+
+# The len() command tells us how long a string is
+while len(phone_number) < 10:
+  # The randint function takes a start and stop range, and returns a random
+  # integer in that range
+  phone_number = phone_number + str(random.randint(0, 9))
+
+print(phone_number)
+```
+
+Time to practice. Try the problems in the [3_Loop_Statements](3_Loop_Statements) folder.
