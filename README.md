@@ -14,8 +14,8 @@ A brief introduction to coding.
     1. [Assignments](#assignments)
     2. [Conditionals](#conditionals)
     3. [Loops](#loops)
-4. Strings
-5. Lists
+4. [Lists](#lists)
+5. [Strings](#strings)
 6. Maps
 7. Functions
 8. Classes
@@ -376,3 +376,84 @@ print(phone_number)
 ```
 
 Time to practice. Try the problems in the [3_Loop_Statements](3_Loop_Statements) folder.
+
+# Lists<a name="lists"></a>
+
+We've talked about three types so far: numbers, booleans, and strings. These are built-in, primitive types. Now we're going to talk about another built-in type that is used to hold more than one value at a time; the *List*. This isn't a primitive type, but a *collection* type. It's used to collect things, in an order.
+
+You can think of a list as a container where you have to line all of the things it contains up in a line. You can then consider the first item, the second item, the last item and so on. What are the items? Anything you can assign to a variable! 
+
+Here's an example of a list of numbers:
+
+```python
+[5, 6, 10, 11]
+```
+We create a literal list using square brackets, and putting values inside separated by commas.
+
+Since a list is a type, when we create a list, we create a value. This means we can assign a list to a variable.
+
+```python
+ages = [12, 10, 8, 2]
+```
+
+We can now do things to the list by using the variable. We can see how many things are in the list by using *len*:
+
+```python
+ages = [12, 10, 8, 2]
+
+print( len(ages) ) # prints 4
+```
+
+We can change the items in the list by assigning different values to them by *indexing* the variable with a number, in square brackets. The number is which element in the list to change. We start the indexing with the number zero, which is the first element. The number one is then the second element, and so on.
+
+```python
+ages = [12, 10, 8, 2]
+ages[0] = 6
+ages[2] = 4
+
+print( ages ) # prints [6, 10, 4, 2]
+```
+
+We can add a new item to the end of the list by calling *append*.
+
+```python
+ages = [12, 10, 8, 2]
+ages.append(23)
+
+print( ages ) # prints [12, 10, 8, 2, 23]
+```
+
+Notice how we use the period to call *append* and how this is different than how we called *len* to get the size of the List. They are both examples of built-in *functions*, we'll learn how to write our own later. But a function is like a command, you do it to something. In the case of *len*, it's a global function and you pass in the thing you want to get the length of. We'll see later you can get the length of other things besides lists this way. We've been using *print* and *input* which are global functions as well. But *append* is a function that works specifically on lists. You have to have a list, then use the period followed by *append* to append something to a specific list. 
+
+There are other functions you can call on lists:
+
+```python
+ages = [12, 10, 8, 6]
+ages.clear()    # the list is now empty
+print( ages )   # prints []
+
+ages.append(5)
+ages.append(10)
+ages.append(15)
+
+print( ages )   # prints [5, 10, 15]
+
+ages.insert(1, 25) # inserts 25 at index 1
+print( ages )      # prints [5, 25, 10, 15]
+
+firstAge = ages.pop(0)  # removes the item at index 0 and returns it
+print( firstAge )       # prints 5
+print( ages )           # prints [25, 10, 15]
+
+ages[len(ages) - 1] = 99  # set the last item to 99
+print( ages )             # 
+```
+
+
+
+
+
+# Strings<a name="strings"></a>
+
+So far we've been dealing mostly with numbers and Booleans. They are simple many of the operators are familiar to you. Strings are another primitive type and they are just as important as numbers and Booleans, but how to manipulate them may seem a little strange at first. In this section we'll cover the basics.
+
