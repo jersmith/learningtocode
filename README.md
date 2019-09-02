@@ -14,8 +14,8 @@ A brief introduction to coding.
     1. [Assignments](#assignments)
     2. [Conditionals](#conditionals)
     3. [Loops](#loops)
-4. [Lists](#lists)
-5. [Strings](#strings)
+4. [Strings](#strings)
+5. [Lists](#lists)
 6. Maps
 7. Functions
 8. Classes
@@ -377,6 +377,36 @@ print(phone_number)
 
 Time to practice. Try the problems in the [3_Loop_Statements](3_Loop_Statements) folder.
 
+# Strings<a name="strings"></a>
+
+So far we've been dealing mostly with numbers and Booleans. Strings are another built-in type and they are just as important as Numbers and Booleans, but how to manipulate them may seem a little strange at first. In this section we'll cover the basics.
+
+Strings can be thought of as a sequence of individual characters. The string "cat" has three characters, "c", "a", "t". We say *characters* instead of *letters* because letters imply only those characters used to write words. In the Latin alphabet, letters are "a" through "z", as well as the upper case letters "A" through "Z". Characters can be digits as well, "0" through "9", or punctuation marks like "," or ":". We use the term *character* generically to mean any of these. In Python they may be characters from non-Latin character sets as well, such as Cyrilic or Arabic. 
+
+Python does not have a separate type for characters, just strings. So "cat" is a string of length 3, "c" is a string of length 1. Strings can be created with double quotes or single quotes. It's useful to use one if your string will contain the other.
+
+```python
+string1 = "This string isn't in single quotes"
+string2 = 'He said "she had it" before I did'
+```
+
+Strings are *immutable*, which means once created they cannot be changed. When we manipulate strings, we typically create new strings from existing ones. Let's say you wanted to check if a word started with the letter "c".
+
+```python
+string1 = "cat"
+string2 = "able"
+
+if (string1[0] == "a"):
+  print("starts with a") # does not print
+
+if (string2[0] == "a"):
+  print("starts with a") # this one prints
+```
+
+
+
+
+
 # Lists<a name="lists"></a>
 
 We've talked about three types so far: numbers, booleans, and strings. These are built-in, primitive types. Now we're going to talk about another built-in type that is used to hold more than one value at a time; the *List*. This isn't a primitive type, but a *collection* type. It's used to collect things, in an order.
@@ -452,8 +482,4 @@ print( ages )             #
 
 
 
-
-# Strings<a name="strings"></a>
-
-So far we've been dealing mostly with numbers and Booleans. They are simple many of the operators are familiar to you. Strings are another primitive type and they are just as important as numbers and Booleans, but how to manipulate them may seem a little strange at first. In this section we'll cover the basics.
 
