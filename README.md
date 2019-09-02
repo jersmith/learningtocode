@@ -403,6 +403,8 @@ if (string2[0] == "a"):
   print("starts with a") # this one prints
 ```
 
+In this example we can get the specific character in a string by using the `[]` brackets to *index* the String. The first character is at index 0, the second character is at index 1, and so on. When we index a string like this, we get a new string with just the character at that index. The original string is unmodified.
+
 
 
 
